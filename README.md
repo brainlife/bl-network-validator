@@ -3,16 +3,16 @@
 # Network Validator
 This is a validator for the `generic/network` datatype in brainlife.
 
-### Authors
-- [Filipi N. Silva](filsilva@iu.edu)
 
-<!-- ### Contributors
-- Franco Pestilli (franpest@indiana.edu) -->
+### Authors
+- [Filipi N. Silva](https://filipinascimento.github.io)
+
+### Contributors
+- [Franco Pestilli](https://liberalarts.utexas.edu/psychology/faculty/fp4834)
+
 
 ### Funding
-[![NIH-1R01EB029272-01](https://img.shields.io/badge/NIH-1R01EB029272_01-blue.svg)](https://www.nibib.nih.gov/node/113361)
-
-
+[![NIH-1R01EB029272-01](https://img.shields.io/badge/NIH-1R01EB029272_01-blue.svg)](https://projectreporter.nih.gov/project_info_description.cfm?aid=9916138&icde=52173380&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC&pball=)
 
 ### Citations
 
@@ -53,11 +53,6 @@ mv config-sample.json config.json
 
 A sample dataset is provided in folder `data` and `config-sample.json`
 
-
-
-<!-- #### Product.json
-
-The secondary output of this app is `product.json`. This file allows web interfaces, DB and API calls on the results of the processing.  -->
 
 ### Dependencies
 
