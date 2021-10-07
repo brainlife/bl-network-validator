@@ -13,8 +13,6 @@ import math
 import igraph as ig
 import jgf
 
-
-
 class NumpyEncoder(json.JSONEncoder):
 	def default(self, obj):
 		if isinstance(obj, (np.int_, np.intc, np.intp, np.int8,
@@ -73,10 +71,21 @@ try:
 except Exception as err:
 	error("Error while loading network file: " + str(err))
 
+if not os.path.exists("output"):
+    os.mkdir("output")
+
+if not os.path.exists("secondary"):
+    os.mkdir("secondary")
+
+#bypass the input file
+if os.path.lexists("output/network.json.gz"):
+    os.remove("output/network.json.gz")
+os.symlink("../"+config['network'], "output/network.json.gz")
+
+#TODO - anything to store in secondary? 
 
 with open("product.json", "w") as fp:
 	json.dump(results, fp, cls=NumpyEncoder)
-
 
 if len(results["errors"]) > 0:
 		print("test failed")

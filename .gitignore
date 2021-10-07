@@ -159,3 +159,5 @@ Temporary Items
 #brainlife
 output/
 product.json
+config.json
+testdata
